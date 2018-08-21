@@ -1,4 +1,5 @@
 """
+CP1404/CP5632 - Practical
 A program that calculates the cumulative amount of income over a number of months and displays it in a report format..
 """
 

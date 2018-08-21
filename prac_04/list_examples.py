@@ -1,3 +1,8 @@
+"""
+CP1404/CP5632 - Practical
+Extended understanding of list methods.
+"""
+
 # 5 number list
 numbers = []
 

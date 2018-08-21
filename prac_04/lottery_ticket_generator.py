@@ -1,3 +1,8 @@
+"""
+CP1404/CP5632 - Practical
+Randomly generates lottery tickets.
+"""
+
 import random
 
 NUMBERS_PER_LINE = 6
