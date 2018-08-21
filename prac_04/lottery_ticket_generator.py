@@ -1,6 +1,6 @@
 """
 CP1404/CP5632 - Practical
-Randomly generates lottery tickets.
+Randomly generates quick picks.
 """
 
 import random
