@@ -14,6 +14,6 @@ for word in words:
 words = list(unique_words.keys())
 words.sort()
 
-max_length = max((len(word)  for word in words))
+max_length = max((len(word) for word in words))
 for word in words:
     print("{:{}} : {}".format(word, max_length, unique_words[word]))
