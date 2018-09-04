@@ -3,6 +3,9 @@ CP1404/CP5632 Practical
 Guitar class with name, year and cost.
 """
 
+CURRENT_YEAR = 2018
+VINTAGE_AGE = 50
+
 
 class Guitar:
     """Represents Guitar Object"""
@@ -11,7 +14,7 @@ class Guitar:
         """Initialises a Guiter instance.
 
         name: string, name of guitar.
-        year: integer, ???
+        year: integer, first appearance of the guitar.
         cost: float, price of guitar.
         """
 
@@ -21,11 +24,13 @@ class Guitar:
 
     def __str__(self):
         """Returns a string representation of a Guitar object."""
-        return "My guitar: {}, first made in {}".format(self.name, self.year)
+        return "{} ({}) : ${:,.2f}".format(self.name, self.year, self.cost)
 
     def get_age(self):
-        age = 2018 - self.year
+        """Calculates the age of the guitar."""
+        age = CURRENT_YEAR - self.year
         return age
 
-    def is_vintage(self, get_age):
-        return get_age >= 50
+    def is_vintage(self):
+        """Determines whether a guitar is vintage or not."""
+        return self.get_age() >= VINTAGE_AGE
