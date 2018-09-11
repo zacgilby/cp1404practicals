@@ -1,6 +1,6 @@
 """
 CP1404/CP5632 Practical
-Testing the guitar class created in guitar.py
+Test the guitar class created in guitar.py
 """
 
 from prac_06.guitar import Guitar

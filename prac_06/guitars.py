@@ -1,6 +1,6 @@
 """
 CP1404/CP5632 Practical
-Guitar stuff
+Guitar test 2
 """
 
 from prac_06.guitar import Guitar

@@ -8,10 +8,10 @@ VINTAGE_AGE = 50
 
 
 class Guitar:
-    """Represents Guitar Object"""
+    """Represent a Guitar Object"""
 
     def __init__(self, name="", year=0, cost=0):
-        """Initialises a Guiter instance.
+        """Initialise a Guitar instance.
 
         name: string, name of guitar.
         year: integer, first appearance of the guitar.
@@ -23,16 +23,16 @@ class Guitar:
         self.cost = cost
 
     def __str__(self):
-        """Returns a string representation of a Guitar object."""
+        """Return a string representation of a Guitar object."""
         return "{} ({}) : ${:,.2f}".format(self.name, self.year, self.cost)
 
     def get_age(self):
-        """Calculates the age of the guitar."""
+        """Calculate the age of the guitar."""
         age = CURRENT_YEAR - self.year
         return age
 
     def is_vintage(self):
-        """Determines whether a guitar is vintage or not."""
+        """Determine whether a guitar is vintage or not."""
         return self.get_age() >= VINTAGE_AGE
 
     def __lt__(self, other):

@@ -1,6 +1,6 @@
 """
 CP1404/CP5632 Practical
-Tests the ProgrammingLanguage class created in programming_language.py
+Test the ProgrammingLanguage class created in programming_language.py
 """
 from prac_06.programming_language import ProgrammingLanguage
 
@@ -14,4 +14,4 @@ print(python)
 print("The dynamically typed languages are:")
 for language in languages:
     if language.is_dynamic():
-        print(language.field)
+        print(language.name)
